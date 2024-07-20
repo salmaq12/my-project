@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Landing Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <style>
+    body {
+
+      background: linear-gradient(lightblue, rgb(227, 209, 227), azure, rgb(208, 208, 234));
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 100vh;
+      align-items: center;
+      text-align: center;
+    }
+
+    .header {
+      font-family: 'Fantasy';
+      color: rgb(174, 155, 175);
+      margin: 40px 0 20px;
+      /* Adjusted margin for header */
+      font-size: 50px;
+    }
+
+    .para {
+      margin: 10px 0 20px;
+      /* Add margin to the paragraph */
+      color: rgb(212, 137, 208);
+      border: 5px solid rgb(212, 137, 208);
+      padding: 10px;
+      border-radius: 5px;
+      width: 60%;
+      font-size: 19px;
+      font-weight: bold;
+    }
+
+    .biza {
+      color: rgb(171, 171, 185);
+      font-size: 35px;
+      margin: 20px 0;
+      /* Adjusted margin for biza paragraph */
+
+    }
+
+    .list {
+      color: rgb(33, 172, 172);
+      list-style: none;
+      padding: 0;
+      font-size: 22px;
+      margin-top: 20px;
+      /* Adjusted margin at the top of the list */
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    .list li {
+      margin-bottom: 15px;
+      /* Increased margin bottom for more spacing between list items */
+    }
+
+    .but {
+      color: rgb(150, 86, 154);
+      background: lightblue;
+      border: none;
+      border-radius: 8px;
+      padding: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 20px auto;
+      /* Original margin */
+      z-index: 2;
+      position: relative;
+      /* Add position: relative */
+      top: 10px;
+      /* Move the button 10px down */
+    }
+
+    .but:hover {
+      color: rgb(138, 27, 105);
+      background: rgb(143, 145, 165);
+    }
+
+    .img {
+      width: auto;
+      height: auto;
+      z-index: 2;
+      position: fixed;
+    }
+
+    .moon {
+      top: -50%;
+      position: fixed;
+      z-index: -3;
+      right: -371px;
+    }
+
+
+
+    .stars {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .star {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background: white;
+      border-radius: 50%;
+      box-shadow: 0 0 10px white;
+      animation: sparkle 2s infinite;
+    }
+
+    @keyframes sparkle {
+
+      0%,
+      100% {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+
+      50% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .header {
+        font-size: 30px;
+        margin: 20px;
+      }
+
+      .para {
+        width: 80%;
+      }
+
+      .biza {
+        font-size: 20px;
+        margin: 10px 20px;
+      }
+
+      .list {
+        font-size: 20px;
+      }
+
+      .but {
+        padding: 10px;
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="stars"></div>
+  <img class="img" src="home-point.png" alt="point">
+  <img class="moon" src="home-moon.png" alt="moon">
+  <header class="header">
+    𝓦𝓮𝓵𝓬𝓸𝓶𝓮 𝓽𝓸 𝓶𝔂 𝓬𝓻𝓮𝓪𝓽𝓲𝓿𝓮 𝔀𝓸𝓻𝓵𝓭
+
+  </header>
+  <p class="para">Experience the beauty &hearts; of imagination</p>
+  <p class="biza">Explore the depths of <em>creativity</em> that shine through every project:</p>
+  <ul class="list">
+    <li>Embrace the journey</li>
+    <li>Discover inspiration</li>
+    <li>Let your creativity soar</li>
+  </ul>
+  <button class="but">(っ◔◡◔)っ ♥ Join me on this adventure ♥</button>
+  <script>
+    function createStar() {
+      const star = document.createElement('div');
+      star.classList.add('star');
+      star.style.top = `${Math.random() * 100}vh`;
+      star.style.left = `${Math.random() * 100}vw`;
+      star.style.animationDuration = `${Math.random() * 3 + 2}s`;
+      document.querySelector('.stars').appendChild(star);
+    }
+
+    for (let i = 0; i < 100; i++) {
+      createStar();
+    }
+  </script>
+</body>
+
+</html>

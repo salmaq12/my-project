@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #353535;
+      color: #f0f0f0;
+    }
+
+    header {
+      height: 100vh;
+      /* Makes welcome section fill viewport height */
+      background-color: #3f6c88;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #353535;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 4em;
+      margin: 0;
+    }
+
+    p#description {
+      font-size: 1.5em;
+      margin-top: 1rem;
+      max-width: 600px;
+    }
+
+    nav {
+      background-color: #317cc7;
+      color: #fff;
+      padding: 1rem;
+      position: fixed;
+      /* Makes navbar stay at top */
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: inherit;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: #669bbc;
+    }
+
+    section {
+      padding: 2rem;
+      background-color: #6f7c76;
+    }
+
+    .project-tile {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      background-color: #353535;
+      color: #f0f0f0;
+    }
+
+    .project-tile h3 {
+      margin: 0;
+    }
+
+    .project-tile a {
+      color: #0466c8;
+    }
+
+    .desc {
+      font-size: 18px;
+
+    }
+
+
+
+
+
+    .my {
+      font-size: 30px;
+    }
+
+    .my-project {
+      color: #4381c3;
+    }
+
+
+    .infos {
+      font-weight: bold;
+    }
+
+    .project-tile a:hover {
+      text-decoration: underline;
+    }
+
+    #contact {
+      padding: 2rem;
+      background-color: #353535;
+      color: #f0f0f0;
+      text-align: center;
+    }
+
+    #contact a {
+      color: #0466c8;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+    }
+
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    /* Media query example */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+        /* Adjust font size for smaller screens */
+      }
+
+      nav a {
+        display: block;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header id="welcome-section">
+    <h1>Welcome to my Portfolio!</h1>
+    <p id="description">𝐈'𝐦 𝐒𝐚𝐥𝐦𝐚, 𝐚 𝐛𝐢𝐨𝐥𝐨𝐠𝐢𝐬𝐭 𝐰𝐢𝐭𝐡 𝐚 𝐩𝐚𝐬𝐬𝐢𝐨𝐧 𝐟𝐨𝐫 𝐰𝐫𝐢𝐭𝐢𝐧𝐠, 𝐰𝐞𝐛
+      𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭, 𝐝𝐞𝐬𝐢𝐠𝐧, 𝐚𝐧𝐝 𝐫𝐞𝐚𝐝𝐢𝐧𝐠. 𝐈 𝐥𝐨𝐯𝐞 𝐰𝐨𝐫𝐤𝐢𝐧𝐠 𝐨𝐧 𝐜𝐫𝐞𝐚𝐭𝐢𝐯𝐞
+      𝐩𝐫𝐨𝐣𝐞𝐜𝐭𝐬 𝐭𝐡𝐚𝐭 𝐜𝐡𝐚𝐥𝐥𝐞𝐧𝐠𝐞 𝐦𝐞 𝐚𝐧𝐝 𝐚𝐥𝐥𝐨𝐰 𝐦𝐞 𝐭𝐨 𝐠𝐫𝐨𝐰 𝐦𝐲 𝐬𝐤𝐢𝐥𝐥𝐬. 𝐓𝐚𝐤𝐞
+      𝐚 𝐥𝐨𝐨𝐤 𝐚𝐭 𝐬𝐨𝐦𝐞 𝐨𝐟 𝐦𝐲 𝐰𝐨𝐫𝐤 𝐛𝐞𝐥𝐨𝐰!
+    </p>
+  </header>
+
+  <nav id="navbar" class="infos">
+    <a href="#projects">Projects</a>
+    <a href="#welcome-section">Home</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="projects">
+    <h2 class="my"> My Projects</h2>
+    <div class="project-tile">
+      <h3 class="my-project">Project 1</h3>
+      <p>Rustic menu featuring coffee and energy balls with website link.</p>
+      <a href="http://127.0.0.1:5500/.vscode/flyer.html" target="_blank">See Project</a>
+    </div>
+    <div class="project-tile">
+      <h3 class="my-project">Project 2</h3>
+      <p>A simple survey form for collecting participant information and feedback.</p>
+      <a href="http://127.0.0.1:5500/thumbnails/survey.html" target="_blank">See Project</a>
+    </div>
+    <div class="project-tile">
+      <h3 class="my-project">Project 3</h3>
+      <p>Music Box Emporium: A responsive landing page featuring exquisite handcrafted music boxes and premium
+        collections.</p>
+      <a href="http://127.0.0.1:5500/thumbnails/product.html" target="_blank">See Project</a>
+    </div>
+    <div class="project-tile">
+      <h3 class="my-project"> Project 4</h3>
+      <p>A creatively designed landing page welcoming visitors to explore imaginative projects.</p>
+      <a href="http://127.0.0.1:5500/thumbnails/display.html" target="_blank">See Project</a>
+    </div>
+    <div class="project-tile">
+      <h3 class="my-project">Project 5</h3>
+      <p>A web page offering essential skincare tips with structured sections and informative content</p>
+      <a href="http://127.0.0.1:5500/thumbnails/app.html" target="_blank">See Project</a>
+    </div>
+  </section>
+
+  <section id="contact">
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+
+
+
+      <a href="mailto:ess.lilyane123@gmail.com">Email</a>
+      <p class="desc">Feel free to reach out to me for collaborations or just to say hi!</p>
+      <p class="desc">Looking forward to connecting with you!</p>
+    </section>
+
+</body>
+
+</html>

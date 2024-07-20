@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Box Emporium</title>
+  <style>
+    /* CSS styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e7d8d8;
+      color: #333d29; 
+    }
+
+    header {
+      background-color: #b2967d;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3); 
+      top: 0;
+      z-index: 1000;
+      width: 100%;
+      position:absolute;
+    }
+
+    #header-img {
+      width: 160px;
+      height: auto;
+      margin: 10px;
+    }
+
+    #nav-bar {
+      display: flex;
+      justify-content: flex-end;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #b2967d;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .nav-link {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    section {
+      width: 100%;
+      margin-bottom: 30px;
+      padding: 20px;
+      background-color: #d5b69e; 
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      color: #333d29; 
+      font-size: 32px;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+
+    p {
+      color: #333d29; 
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .product img {
+      max-width: 100%;
+      height: 300px; 
+      object-fit: cover;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .product-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 120px;
+      padding-top: 0px;
+    }
+
+    .product {
+      width: 350px;
+      margin: 20px;
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-info {
+      margin-top: auto;  
+    }
+
+    .price {
+      font-size: 28px;
+      color: black; 
+      margin-top: 10px;
+      background-color: white;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; 
+      margin-bottom: 0; 
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 8px;
+    }
+
+    form {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    input[type="email"] {
+      width: 250px;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #333d29; 
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #000000fb;  
+      color: #fff;
+      border: none;
+      padding: 14px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      font-weight: bold;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #412c10;
+    }
+
+    @media screen and (max-width: 600px) {
+      /* Add responsive styles here if needed */
+    }
+  </style>
+</head>
+<body>
+  <header id="header">
+    <img id="header-img" src="https://www.regentantiques.com/product_images/06248-Antique-Swiss-8-Air-Rosewood-Music-Box-6-Bells-c.1890-1.jpg" alt="Music Box Emporium">
+    <nav id="nav-bar">
+      <a class="nav-link" href="#features">Features</a>
+      <a class="nav-link" href="#pricing">Pricing</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="features">
+      <h2>Discover Our Exquisite Music Boxes</h2>
+      <div class="product-container">
+        <div class="product">
+          <img src="https://th.bing.com/th/id/R.8acd5c56c0afaad996526da6fa63a24b?rik=dSF8HfbTIXfsSQ&riu=http%3a%2f%2fwww.exquisiteandrare.com%2ffiles%2faxt926875001.jpg&ehk=n6bSQ%2bEuUWAZdYPhMBFHe8yPw8dmb1jxhx9irZiPuo8%3d&risl=&pid=ImgRaw&r=0" alt="Music Box">
+          <div class="product-info">
+            <h3>Elegant Melodies in a Box</h3>
+            <p>Experience the charm of our handcrafted music boxes. Each piece is meticulously designed to bring joy and nostalgia with every tune.</p>
+            <div class="price">$59.99</div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="https://th.bing.com/th/id/OIP.fxYRI5oJrXkCpv7tIDTuFAHaGF?rs=1&pid=ImgDetMain" alt="Music Box">
+          <div class="product-info">
+            <h3>Premium Collection</h3>
+            <p>Discover our premium collection of music boxes, crafted with precision and elegance.</p>
+            <div class="price">$100.29</div>
+          </div>
+        </div>
+
+        <div class="product">
+          <img src="https://i.pinimg.com/originals/e2/e6/3c/e2e63c680e61bcc3eec2d3fbd8c9253a.jpg" alt="Music Box">
+          <div class="product-info">
+            <h3>Limited Edition Masterpieces</h3>
+            <p>Own a piece of history with our limited edition music boxes. Handpicked for collectors.</p>
+            <div class="price">$149.99</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing">
+      <h2>Pricing</h2>
+      <p>Choose from our selection of premium music boxes:</p>
+      <ul>
+        <li><strong>Standard Box:</strong> $59.99</li>
+        <li><strong>Deluxe Box:</strong> $109.29</li>
+        <li><strong>Limited Edition Box:</strong> $149.99</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>For inquiries or to place an order, please fill out the form below:</p>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <br>
+        <input type="submit" id="submit" value="Submit">
+      </form>
+    </section>
+
+    <section id="product-video">
+      <h2>See Our Music Boxes in Action</h2>
+   
+      <div class="video-container">
+        <iframe id="video" src="https://www.youtube.com/embed/ZHSelKSN4sg" allowfullscreen></iframe>
+      </div>
+      
+      
+          </section>
+        </main>
+      
+        <script src="script.js"></script>
+      </body>
+      </html>
